@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.content {
+  overflow-x: hidden;
+}
+
+.content .section {
+  width: 100%;
+  height: 100vh;
+}
+
+.content .section.hero {
+  background-image: url(https://images.unsplash.com/photo-1511904482363-84b9f0a4f8bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNlfDI2fHxjaGFpciUyMGNvcm5lcnxlbnwwfHx8fDE2MzYwNTQwNjY&ixlib=rb-1.2.1&q=80&w=1080);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content .section.gradient-green {
+  background: linear-gradient(to bottom, #64b5f6, #2196f3); /* أخضر */
+}
+
+.content .section.gradient-orange {
+  background: linear-gradient(to bottom, #ffcc80, #ff9800); /* برتقالي */
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  perspective: 500px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
